@@ -10,7 +10,7 @@ end)
 -- read this: https://github.com/VonHeikemen/lsp-zero.nvim/blob/v3.x/doc/md/guide/integrate-with-mason-nvim.md
 require('mason').setup({})
 require('mason-lspconfig').setup({
-  ensure_installed = { "lua_ls", "clangd", "jdtls", "jedi_language_server", "rust_analyzer", "gopls" },
+  ensure_installed = { "lua_ls", "clangd", "jdtls", "jedi_language_server", "rust_analyzer" },
   handlers = {
     lsp_zero.default_setup,
   },
@@ -22,6 +22,6 @@ require("lspconfig").jdtls.setup({})
 require("lspconfig").lua_ls.setup {}
 require("lspconfig").clangd.setup {}
 require("lspconfig").rust_analyzer.setup {}
-require("lspconfig").gopls.setup {}
+--require("lspconfig").gopls.setup {}
 require("lspconfig").jdtls.setup {}
 require("lspconfig").jedi_language_server.setup {}

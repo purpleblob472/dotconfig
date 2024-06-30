@@ -4,17 +4,17 @@
     border: none;
     border-radius: 10;
     font-family: FontAwesome, "0xProto Nerd Font Mono";
-    font-size: 14px;
+    font-size: 13px;
     min-height: 0;
 }
 
 window#waybar {
     /* background: rgba(30,30,46,0.7); */
-    background: alpha(@base, 0.5);
+    background: transparent; 
     /* border-bottom: 3px solid @subtext0;  */
     color: @base;
     padding-bottom: 10px;
-    border-radius: 0;
+    border-radius: 10;
 }
 
 tooltip {
@@ -26,9 +26,11 @@ tooltip label {
 }
 
 #workspaces {
-    margin-left: 0px;
+    margin-top: 1px;
+    margin-left: 1px;
     padding: 0;
     background-color: @lavender;
+    border-radius: 10;
 }
 
 
@@ -47,9 +49,14 @@ tooltip label {
     color: @base;
 }
 
+#workspaces button.focused {
+    background: #000000;
+    /* border-bottom: 3px solid white; */
+}
+
 #workspaces button:hover {
-    background: @flamingo;
-    color: @base;
+    background: @base;
+    color: @text;
 }
 
 /*
@@ -82,6 +89,7 @@ window#waybar > * {
 
 
 #window {
+    margin-top: 1px;
     background: @sapphire;
     color: @base;
     padding: 0 10px;
@@ -94,8 +102,9 @@ window#waybar > * {
 }
 
 #wireplumber {
-    margin-right: 2px;
-    background: @peach;
+    margin-top: 1px;
+    margin-right: 1px;
+    background: @sapphire;
     color: @base;
     padding: 0 10px;
 }
@@ -103,43 +112,14 @@ window#waybar > * {
 #wireplumber.muted {
     background: @red;
 }
-#tray {
-    margin-right: 2px;
-    color: @base;
-}
-#custom-firefox {
-    margin-left: 2px;
-    background: @red;
-    color: @base;
-    padding: 0 10px;
-}
 
-#custom-spotify {
-    margin-left: 2px;
-    background: @green;
-    color: @base;
-    padding: 0 10px;
-}
-
-#custom-notification {
-    margin-right: 2px;
-    background: @mauve;
-    color: @base;
-    padding: 0 10px;
-
-}
-#custom-notification.notification {
-    background: @green;
-}
-#custom-notification.dnd-none, #custom-notification.dnd-notification {
-    background: @red;
-}
 #mode, #clock, #battery {
-    padding: 0 10px; 
+    margin-top: 1px;
+    padding: 0 10px;
 }
 
 #clock {
-    margin-right: 0px;
+    margin-right: 1px;
     color: @base;
     background-color: @yellow;
     /* border: 2px solid @subtext0; */
