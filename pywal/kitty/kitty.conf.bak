@@ -1,0 +1,13 @@
+include ~/.cache/wal/colors-kitty.conf
+
+font_family FontAwesome
+font_family 0xProto Nerd Font Mono
+
+// background #232627
+background_opacity 0.8
+background_blur 1
+
+map ctrl+backspace send_text all \x17
+
+
+

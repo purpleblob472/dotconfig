@@ -1,0 +1,130 @@
+@import "mocha.css";
+
+* {
+    border: none;
+    border-radius: 10;
+    font-family: FontAwesome, "0xProto Nerd Font Mono";
+    font-size: 13px;
+    min-height: 0;
+}
+
+window#waybar {
+    /* background: rgba(30,30,46,0.7); */
+    background: transparent; 
+    /* border-bottom: 3px solid @subtext0;  */
+    color: @base;
+    padding-bottom: 10px;
+    border-radius: 10;
+}
+
+tooltip {
+  background: rgba(43, 48, 59, 0.5);
+  border: 1px solid rgba(100, 114, 125, 0.5);
+}
+tooltip label {
+  color: white;
+}
+
+#workspaces {
+    margin-top: 1px;
+    margin-left: 1px;
+    padding: 0;
+    background-color: @lavender;
+    border-radius: 10;
+}
+
+
+#workspaces button {
+    padding: 0 2px;
+    /* background: @lavender; */
+    color: @base;
+    /* border-bottom: 3px solid transparent; */
+    border-radius: 10;
+    transition: all 0s;
+}
+
+
+#workspaces button.active{
+    background: @rosewater;
+    color: @base;
+}
+
+#workspaces button.focused {
+    background: #000000;
+    /* border-bottom: 3px solid white; */
+}
+
+#workspaces button:hover {
+    background: @base;
+    color: @text;
+}
+
+/*
+#workspaces {
+  padding: 0;
+  background-color: @lavender;
+  border-radius: 10;
+}
+
+#workspaces button:not(:last-child) {
+  margin-right: 10px; 
+}
+
+window#waybar > * {
+  margin-top: 0px;
+  min-height: 18px
+}
+
+#workspaces button {
+  padding: 0;
+  background: transparent;
+  border-radius: 20px;
+  transition: all 0.15s ease-in-out;
+}
+
+#workspaces button.active {
+  background: linear-gradient(45deg, #9d37fc, #ed1153);
+}
+*/
+
+
+#window {
+    margin-top: 1px;
+    background: @sapphire;
+    color: @base;
+    padding: 0 10px;
+    border-radius: 10;
+}
+
+#privacy {
+    padding: 0 10px;
+    color: @red;
+}
+
+#wireplumber {
+    margin-top: 1px;
+    margin-right: 1px;
+    background: @sapphire;
+    color: @base;
+    padding: 0 10px;
+}
+ 
+#wireplumber.muted {
+    background: @red;
+}
+
+#mode, #clock, #battery {
+    margin-top: 1px;
+    padding: 0 10px;
+}
+
+#clock {
+    margin-right: 1px;
+    color: @base;
+    background-color: @yellow;
+    /* border: 2px solid @subtext0; */
+    /* padding-bottom: 10px; */
+    /* border-radius: 25px; */
+}
+
+

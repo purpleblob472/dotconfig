@@ -1,0 +1,155 @@
+@import "mocha.css";
+@import "rose-pine.css";
+@import "/home/jon/.cache/wal/colors-waybar.css";
+
+/*
+  /\    |      |    
+ /--\   |      |    
+/    \  |____  |____
+*/
+
+
+* {
+    border-radius: 10px;
+    font-family: FontAwesome, "0xProto Nerd Font Mono";
+    font-size: 14px;
+    min-height: 0;
+    opacity: 1;
+}
+
+window#waybar {
+    background: transparent;
+    /* background: alpha(@color0, 0.5); */
+    color: @forground;
+}
+
+tooltip {
+  background: rgba(43, 48, 59, 0.5);
+  border: 1px solid rgba(100, 114, 125, 0.5);
+
+}
+tooltip label {
+  color: white;
+}
+
+
+/*
+|      |----  |---  -----
+|      |--    |---    |
+|____  |____  |       |
+*/
+
+
+#workspaces {
+    background-color: @color0;
+    padding: 0 0px;
+}
+
+#workspaces button {
+    /* background: @lavender; */
+    color: @color3;
+    /* border-bottom: 3px solid transparent; */
+    border-radius: 10;
+    transition: all 0s;
+}
+
+#workspaces button.active{
+    color: @color15;
+    background: @color0;
+}
+
+#workspaces button:hover {
+    background: @color2;
+    border: 1px solid @color2;
+    box-shadow: none;
+    text-shadow: none;
+    color: @text;
+}
+
+#window {
+    background: @sapphire;
+    color: @base;
+    padding: 0 10px;
+    border-radius: 10px;
+}
+
+#privacy {
+    padding: 0 10px;
+    color: @red;
+}
+
+#custom-firefox {
+    margin-left: 2px;
+    background: @red;
+    color: @base;
+    padding: 0 10px;
+}
+
+#custom-spotify {
+    background: @color0;
+    color: @color15;
+    padding: 0 10px;
+}
+
+.modules-right {
+    color: @color0;
+}
+
+#tray {
+    margin-left: 5px;
+    background: @color0;
+    color: @color3;
+    padding: 0px 10px;
+
+}
+
+#tray menu {
+    color: @color15;
+    background: @color0;
+
+}
+
+#tray.empty {
+    background: transparent;
+} 
+#tray * :hover {
+    color: @color0;
+    background: @color3;
+}
+
+#custom-notification {
+    background: @color0;
+    color: @color3;
+    padding: 0px 10px;
+    border-radius: 10px 0px 0px 10px;
+
+}
+#custom-notification.notification {
+    color: @color15;
+}
+#custom-notification.dnd-none, #custom-notification.dnd-notification {
+    color: @color1
+}
+
+#wireplumber {
+    background: @color0;
+    color: @color3;
+    padding: 0 10px;
+    border-radius: 0px;
+}
+ 
+#wireplumber.muted {
+    color: @color1;
+}
+
+#clock {
+    padding: 0px 10px;
+    border-radius: 0px 10px 10px 0px;
+    background: @color0;
+    color: @color3;
+    /* border: 2px solid @subtext0; */
+    /* padding-bottom: 10px; */
+    /* border-radius: 25px; */
+}
+
+
