@@ -34,6 +34,13 @@ require("lazy").setup({
 --            vim.cmd('colorscheme catppuccin-mocha')
 --        end
 --    },
+      {
+          'uZer/pywal16.nvim', 
+          name = 'pywal16',
+            config = function()
+                vim.cmd('colorscheme pywal16')
+            end
+      },
 --    {
 --        'maxmx03/solarized.nvim',
 --        name = 'solarized',
@@ -42,12 +49,12 @@ require("lazy").setup({
 --            vim.cmd('colorscheme solarized')
 --        end
 --    },
-      { "rose-pine/neovim",
-      name = "rose-pine",
-      config = function ()
-          vim.cmd('colorscheme rose-pine-main')
-      end
-      },
+--      { "rose-pine/neovim",
+--      name = "rose-pine",
+--      config = function ()
+--          vim.cmd('colorscheme rose-pine-main')
+--      end
+--      },
 --    {'sts10/vim-pink-moon', name = "pink-moon",
 --    config = function()
 --        vim.cmd('colorscheme pink-moon')

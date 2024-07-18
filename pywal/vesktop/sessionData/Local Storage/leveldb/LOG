@@ -1,0 +1,12 @@
+2024/07/18-20:05:40.087 ee07 Reusing MANIFEST /home/jon/.config/vesktop/sessionData/Local Storage/leveldb/MANIFEST-000001
+2024/07/18-20:05:40.093 ee07 Recovering log #58
+2024/07/18-20:05:40.093 ee07 Reusing old log /home/jon/.config/vesktop/sessionData/Local Storage/leveldb/000058.log 
+2024/07/18-20:30:01.041 ee08 Level-0 table #63: started
+2024/07/18-20:30:01.048 ee08 Level-0 table #63: 33796 bytes OK
+2024/07/18-20:30:01.049 ee08 Delete type=0 #58
+2024/07/18-21:53:19.738 ee08 Level-0 table #65: started
+2024/07/18-21:53:19.742 ee08 Level-0 table #65: 17121 bytes OK
+2024/07/18-21:53:19.744 ee08 Delete type=0 #62
+2024/07/18-23:32:19.739 ee08 Level-0 table #67: started
+2024/07/18-23:32:19.743 ee08 Level-0 table #67: 8805 bytes OK
+2024/07/18-23:32:19.745 ee08 Delete type=0 #64

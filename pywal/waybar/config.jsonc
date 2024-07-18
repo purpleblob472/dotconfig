@@ -4,10 +4,16 @@
     "height": 32,
     "modules-left": ["hyprland/workspaces", "tray"],
     "modules-center": ["custom/spotify"],
-    "modules-right": ["custom/notification", "wireplumber", "clock"],
+    "modules-right": ["custom/notification", "wireplumber", "clock", "custom/wallpaper"],
     "width": 1900, 
-    "margin-top": 8,
+    "margin-top": 4,
 
+    "custom/wallpaper": {
+        "tooltop": false,
+        "format": "",
+        "on-click": "/home/jon/.config/waybar/scripts/wallpaper-switcher",
+
+    },
     "custom/firefox": {
         "tooltip": true,
         "exec": "/usr/bin/python3 /home/jon/.config/waybar/mediaplayer.py --player firefox",

@@ -141,12 +141,19 @@ tooltip label {
 #wireplumber.muted {
     color: @color1;
 }
-
-#clock {
+#custom-wallpaper{
     padding: 0px 10px;
     border-radius: 0px 10px 10px 0px;
     background: @color0;
     color: @color3;
+
+}
+
+#clock{ 
+    background: @color0;
+    color: @color3;
+    padding: 0px 10px;
+    border-radius: 0px;
     /* border: 2px solid @subtext0; */
     /* padding-bottom: 10px; */
     /* border-radius: 25px; */
