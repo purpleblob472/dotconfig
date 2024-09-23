@@ -1,0 +1,116 @@
+{
+    "reload_style_on_change": true,
+    "position": "bottom",
+    "layer": "top",
+    "height": 16,
+    "modules-left": ["hyprland/workspaces","custom/spotify", "tray"],
+    "modules-center": [],
+    "modules-right": ["load", "cpu", "memory", "wireplumber", "custom/notification", "network", "user", "clock"],
+
+    "custom/wallpaper": {
+        "tooltop": false,
+        "format": "",
+        "on-click": "/home/jon/.config/waybar/scripts/wallpaper-switcher",
+
+    },
+    "custom/firefox": {
+        "tooltip": true,
+        "exec": "/usr/bin/python3 /home/jon/.config/waybar/mediaplayer.py --player firefox",
+        "format": "{} ",
+        "return-type": "json",
+        //"max-length": 40,
+        "on-click": "playerctl -p firefox play-pause",
+        "on-click-middle": "killall firefox",
+        "on-scroll-up": "playerctl -p firefox next",
+        "on-scroll-down": "playerctl -p firefox previous"
+    },
+    "custom/spotify": {
+        "tooltip": true,
+        "exec": "/usr/bin/python3 /home/jon/.config/waybar/mediaplayer.py --player spotify",
+        "format": "{} ", //♪,
+        "return-type": "json",
+        //"max-length": 40,
+        "on-click": "playerctl -p spotify play-pause",
+        "on-click-middle": "killall spotify",
+        "on-scroll-up": "playerctl -p spotify next",
+        "on-scroll-down": "playerctl -p spotify previous"
+    },
+
+    "custom/notification": {
+        "tooltip": false,
+        "format": "Notifications:{} ",
+        "format-icons": {
+            "notification": " <span foreground='red'><sup></sup></span>",
+            "none": "",
+            "dnd-notification": " <span foreground='red'><sup></sup></span>",
+            "dnd-none": " ",
+            "inhibited-notification": " <span foreground='red'><sup></sup></span>",
+            "inhibited-none": " ",
+            "dnd-inhibited-notification": " <span foreground='red'><sup></sup></span>",
+            "dnd-inhibited-none": " "
+        },
+        "return-type": "json",
+        "exec-if": "which swaync-client",
+        "exec": "swaync-client -swb",
+        "on-click": "swaync-client -t -sw",
+        "on-click-right": "swaync-client -d -sw",
+        "escape": true
+    },
+
+    "hyprland/window": {
+        "icon": true,
+        "icon-size": 18,
+    },
+
+    "privacy": {
+        "icon-size": 13,
+    },
+
+    "user": {
+        "interval": 1,
+        "format": "Uptime:{work_H}{work_M}{work_S} "
+    },
+
+    "memory": {
+        "tooltip": false,
+        "format": "Memory:{percentage}% ",    
+    },
+
+    "network": {
+        "tooltip": false,
+        "format": "IP:{ipaddr} ",
+    },
+
+    "cpu": {
+        "tooltip": false, 
+        "format": "CPU:{usage}% ",
+    },
+    
+    "load": {
+        "tooltip": false,
+        "format": "Load:{} ",
+    },
+
+    "tray": {
+        "icon-size": 13,
+        "show-passive-items": true,
+        "spacing": 2,
+    },
+    "wlr/taskbar": {
+        
+        "icon-size": 4,
+    },
+
+    "wireplumber": {
+        "format": "Volume:{volume}% ",    
+        "on-click": "wpctl set-default $(wpctl status | grep \"G733 Gaming Headset Analog Stereo\" | tr -dc '0-9' | cut -c1-2)",
+        "on-click-right": "wpctl set-default $(wpctl status | grep \"GA104 High Definition Audio Controller Digital Stereo\" | tr -dc '0-9' | cut -c1-2)",
+        "on-click-middle": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+    },
+
+    "clock": {
+        "tooltip": false,
+        "format": "Date:{:%d-%m-%y Day:%A Time:%H:%M:%S}",
+        "interval": 1,
+    }
+}

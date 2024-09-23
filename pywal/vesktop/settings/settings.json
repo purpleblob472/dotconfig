@@ -65,7 +65,13 @@
             "enabled": false
         },
         "BetterFolders": {
-            "enabled": true
+            "enabled": true,
+            "sidebar": true,
+            "showFolderIcon": 1,
+            "keepIcons": false,
+            "closeAllHomeButton": false,
+            "closeAllFolders": false,
+            "forceOpen": false
         },
         "BetterGifAltText": {
             "enabled": false
@@ -86,7 +92,9 @@
             "enabled": false
         },
         "BetterSettings": {
-            "enabled": true
+            "enabled": true,
+            "disableFade": true,
+            "eagerLoad": true
         },
         "BetterUploadButton": {
             "enabled": false
@@ -311,7 +319,8 @@
             "enabled": false
         },
         "NotificationVolume": {
-            "enabled": true
+            "enabled": true,
+            "notificationVolume": 100
         },
         "NSFWGateBypass": {
             "enabled": false
@@ -394,9 +403,6 @@
         "RoleColorEverywhere": {
             "enabled": false
         },
-        "SearchReply": {
-            "enabled": false
-        },
         "SecretRingToneEnabler": {
             "enabled": false
         },
@@ -416,9 +422,6 @@
             "enabled": false
         },
         "ShowAllMessageButtons": {
-            "enabled": false
-        },
-        "ShowAllRoles": {
             "enabled": false
         },
         "ShowConnections": {
@@ -446,7 +449,8 @@
             "enabled": false
         },
         "SpotifyControls": {
-            "enabled": true
+            "enabled": true,
+            "hoverControls": false
         },
         "SpotifyCrack": {
             "enabled": false
@@ -523,9 +527,6 @@
         "VoiceMessages": {
             "enabled": false
         },
-        "WatchTogetherAdblock": {
-            "enabled": false
-        },
         "WebKeybinds": {
             "enabled": true
         },
@@ -555,6 +556,15 @@
         },
         "MentionAvatars": {
             "enabled": false
+        },
+        "YoutubeAdblock": {
+            "enabled": false
+        },
+        "AlwaysExpandRoles": {
+            "enabled": false
+        },
+        "FullSearchContext": {
+            "enabled": false
         }
     },
     "notifications": {
@@ -567,6 +577,6 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1721132527743
+        "settingsSyncVersion": 1726848647407
     }
 }

@@ -1,4 +1,4 @@
-@import "/home/jon/.cache/wal/colors-rofi-dark.rasi"
+@import "/home/jon/.cache/wal/colors-rofi-anime.rasi"
 
 configuration {
 	modes: "combi,drun,window,calc,filebrowser,recursivebrowser";
@@ -7,7 +7,7 @@ configuration {
 	yoffset: 0;
 	xoffset: 0;
 	fixed-num-lines: true;
-	show-icons: true;
+	show-icons: false;
 /*	terminal: "rofi-sensible-terminal";*/
 /*	ssh-client: "ssh";*/
 /*	ssh-command: "{terminal} -e {ssh-client} {host} [-p {port}]";*/
@@ -163,3 +163,4 @@ configuration {
 entry { 
     placeholder: "";
 }
+/* element-icon { size: 128px ; } */

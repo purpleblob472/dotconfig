@@ -1,3 +1,8 @@
-image=$(ls ~/Pictures/Wallpaper/ | while read A ; do  echo -en "$A\x00icon\x1f~/Pictures/Wallpaper/$A\n"; done | rofi -dmenu -p "Wallpaper")
+image=$(ls ~/Pictures/Wallpaper/ | while read A ; do  echo -en "$A\x00icon\x1f~/Pictures/Wallpaper/$A\n"; done | rofi -dmenu -theme theme1 -p "Wallpaper:")
+
+if [ -z $image ]
+    then exit
+fi
+
 wallpaper ~/Pictures/Wallpaper/$image &
 disown %1

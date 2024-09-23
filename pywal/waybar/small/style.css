@@ -1,0 +1,48 @@
+@import "/home/jon/.cache/wal/colors-waybar.css";
+
+* {
+    border: none;
+    border-radius: 0;
+    font-family: FontAwesome, "0xProto Nerd Font Mono"; 
+    font-size: 13px;
+    min-height: 0;
+    color: @color15;
+}
+
+window#waybar {
+    background: @color0;
+    color: @color15;
+}
+
+#workspaces button {
+    padding: 0 0px;
+    background: transparent;
+    color: @color3;
+}
+
+#workspaces button.active {
+    color: @color15;
+}
+
+
+#clock {
+    background-color: transparent;
+}
+
+#tray {
+    margin-left: 1px;
+}
+
+#custom-notification.notification {
+    color: lightgreen;
+}
+#custom-notification.dnd-none, #custom-notification.dnd-notification {
+    color: red;
+}
+
+
+
+tooltip {
+    background: transparent;
+}
+

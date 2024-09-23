@@ -2,7 +2,13 @@
     "discordBranch": "stable",
     "minimizeToTray": false,
     "arRPC": true,
-    "splashColor": "rgb(158, 204, 218)",
-    "splashBackground": "rgb(14, 14, 24)",
-    "hardwareAcceleration": false
+    "splashColor": "rgb(223, 225, 236)",
+    "splashBackground": "rgb(40, 28, 40)",
+    "hardwareAcceleration": false,
+    "splashTheming": true,
+    "spellCheckLanguages": [
+        "en-GB",
+        "en"
+    ],
+    "customTitleBar": false
 }
