@@ -1,0 +1,72 @@
+@import "/home/daniel/.cache/wal/colors-waybar.css";
+
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "0xProto Nerd Font Mono";
+    font-size: 12px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: alpha (@color0, 0.8) /*rgba(36, 40, 59, 1)*/;
+    /* border-bottom: 2px solid @color1 rgba(41, 164, 189, 1); */
+    color: #c0caf5;
+}
+
+tooltip {
+  background: rgba(43, 48, 59, 0.5);
+  border: 2px solid rgba(100, 114, 125, 0.5);
+}
+tooltip label {
+  color: #c0caf5;
+}
+
+#workspaces button {
+    padding: 0 2px;
+    background: transparent;
+    color: @color15;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+}
+
+#workspaces button.focused {
+    background: #64727D;
+    border-bottom: 2px solid white;
+}
+
+#workspaces button.active {
+    /* background: @color3; */
+    color: @color3;
+    /* border-bottom: 2px solid @color1; */
+}
+
+#window {
+   color: @color15;
+}
+
+#clock, #battery {
+    padding: 0 10px;
+    color: @color15;
+}
+
+#battery.charging {
+    color: @color3;
+}
+
+@keyframes blink {
+    to {
+        background-color: #ffffff;
+        color: black;
+    }
+}
+
+#battery.warning:not(.charging) {
+    background: #f53c3c;
+    color: #c0caf5;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: steps(12);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}

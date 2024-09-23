@@ -1,0 +1,25 @@
+{
+   "reload_style_on_change": true,
+   "layer": "top",
+   "position": "top",
+   "height": 18,
+   "width": 1280,
+   "margin": 0,
+   "spacing": 2,
+
+   "modules-left": ["hyprland/workspaces", "tray"],
+   "modules-center": ["hyprland/window"],
+   "modules-right": ["battery", "clock"],
+    
+
+   "battery": {
+       "format": "{capacity}% {icon}",
+       "format-icons": ["", "", "", "", ""]
+   },
+
+   "clock": {
+       "interval": 1,
+       "format": "{:%H:%M:%S}",
+       "format-alt": "{:%a, %d. %b  %H:%M}"
+   }
+}
